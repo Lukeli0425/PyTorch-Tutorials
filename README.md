@@ -12,7 +12,11 @@ After installation, we can create an virtual environment via Miniforge:
 ```zsh
 conda create --n pytorch python=3.8
 ```
-I named it "pytorch" since I'm only using it when learning PyTorch. Note that we need to create a py38 environment if we want to run PyTorch on Apple Silicon. Now we can install PyTorch on our environment:
+I named it "pytorch" since I'm only using it when learning PyTorch. Note that we need to create a py38 environment if we want to run PyTorch on Apple Silicon. Acitivate the environment:
+```zsh
+conda activate pytorch
+```
+Now we can install PyTorch on our environment:
 ```zsh
 conda install pytorch torchvision -c pytorch
 ```
@@ -21,6 +25,11 @@ Verify the installation by importing torch adn torchvision and printing the vers
 import torch
 import torchvision
 print(torch.__version__)
+print(torchvision.__version__)
+```
+If no errors were raised, the installation is successful. Here we install some other packages in case of future usage:
+```zsh
+conda install matplotlib scikit-learn pandas
 ```
 
 ## File Listings
