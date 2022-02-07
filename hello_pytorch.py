@@ -1,4 +1,5 @@
 import torch
 import torchvision
-print(torch.__version__)
-print(torchvision.__version__)
+print(f"torch={torch.__version__}")
+print(f"torchvision={torchvision.__version__}")
+print("Hello PyTorch!")

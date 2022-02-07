@@ -24,13 +24,15 @@ Verify the installation by importing torch & torchvision and printing their vers
 ```python
 import torch
 import torchvision
-print(torch.__version__)
-print(torchvision.__version__)
+print(f"torch=={torch.__version__}")
+print(f"torchvision=={torchvision.__version__}")
+print("Hello PyTorch!")
 ```
 If no errors were raised, the installation is successful. My output is:
 ```
-1.10.2
-0.11.0a0
+torch==1.10.2
+torchvision==0.11.0a0
+Hello PyTorch!
 ```
 Here we install some other packages in case of future usage:
 ```zsh
