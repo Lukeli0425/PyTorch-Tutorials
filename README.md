@@ -6,7 +6,7 @@ This repo includes resources, codes and notes while learning [**PyTorch**](https
 
 ## Environment Setup
 
-All my codes are built on an M1 Macbook Air(Apple Silicon). Therefore we need to install  [Miniforge](https://github.com/conda-forge/miniforge) from [here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh) since Anaconda and Miniconda don't work on Apple Silicon. 
+All my codes are built on an M1 Macbook Air(Apple Silicon). Therefore we need to install  [**Miniforge**](https://github.com/conda-forge/miniforge) from [here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh) since Anaconda and Miniconda don't work on Apple Silicon. 
 
 After installation, we can create an virtual environment via Miniforge:
 ```zsh
@@ -20,18 +20,27 @@ Now we can install PyTorch on our environment:
 ```zsh
 conda install pytorch torchvision -c pytorch
 ```
-Verify the installation by importing torch adn torchvision and printing the versions:
+Verify the installation by importing torch & torchvision and printing their versions:
 ```python
 import torch
 import torchvision
 print(torch.__version__)
 print(torchvision.__version__)
 ```
-If no errors were raised, the installation is successful. Here we install some other packages in case of future usage:
+If no errors were raised, the installation is successful. My output is:
+```
+1.10.2
+0.11.0a0
+```
+Here we install some other packages in case of future usage:
 ```zsh
 conda install matplotlib scikit-learn pandas
 ```
 
 ## File Listings
 
+## References
 
+[PyTorch Docs](https://pytorch.org/)
+
+[Tutorial Videos on Bilibili](https://www.bilibili.com/video/BV1US4y1M7fg?p=1)
