@@ -16,7 +16,7 @@ if __name__ == "__main__":
     # import from list
     a = torch.tensor([2.,3.2])
     b = torch.FloatTensor([2.,3.2]) # input list to transform list to tensor
-    c = torch.FloatTensor(2,3) # input integers to create a tensor with a specific shape
+    c = torch.FloatTensor(2,3) # input integers to create a tensor of a specific shape
     d = torch.tensor([[2.,3.2],[1.,22.3]])
     print(f"\n{a}\n{b}\n{c}\n{d}\n")
 
@@ -39,6 +39,8 @@ if __name__ == "__main__":
     print(f"\n{a.type()}\t{a.dtype}\n{b.type()}\t{b.dtype}")
     print(f"{c.type()}\t{c.dtype}\n{d.type()}\t{d.dtype}\n")
 
-    a = torch.randn(2,3)
-    b = torch.tensor([2.,3])
-    print(a.type(),b.type())
+    # random initialization
+    a = torch.rand(3,3) # create a random tensor of a specific shape
+    b = torch.rand_like(a) # create a random tensor of a.shape
+    c = torch.randint(1,10,[3,3]) # given shape, maximum ad minimum create a random int tensor
+    print(f"\n{a}\n{b}\n{c}\n")
