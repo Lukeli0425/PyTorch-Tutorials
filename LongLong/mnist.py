@@ -1,4 +1,5 @@
-from turtle import forward
+# 2022-2-8 luke
+# demo of classification on mnist
 import torch
 from torch import nn
 from torch.nn import functional as F
