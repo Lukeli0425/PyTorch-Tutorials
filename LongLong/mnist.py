@@ -61,9 +61,9 @@ if __name__ == "__main__":
     print(x.shape)
     print(y.shape)
     visualize_minst(x,y,'label')
+
     # build model
     model = Network()
-    # print(one_hot(np.array([1,2,3]),1))
 
     # train model
     optimizer = torch.optim.SGD(model.parameters(),lr=0.01,momentum=0.9)

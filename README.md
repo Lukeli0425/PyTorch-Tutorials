@@ -37,6 +37,7 @@ Hello PyTorch!
 Here we install some other packages in case of future usage:
 ```zsh
 conda install matplotlib scikit-learn pandas
+conda install jupyter notebook
 ```
 
 ## File Listings
