@@ -42,5 +42,12 @@ if __name__ == "__main__":
     # random initialization
     a = torch.rand(3,3) # create a random tensor of a specific shape
     b = torch.rand_like(a) # create a random tensor of a.shape
-    c = torch.randint(1,10,[3,3]) # given shape, maximum ad minimum create a random int tensor
+    c = torch.randint(1,10,[3,3]) # given shape, maximum & minimum create a random int tensor
+    d = torch.randint_like(c,1,10) # given maximum & minimum create a random int tensor of a.shape
+    print(f"\n{a}\n{b}\n{c}\n{d}\n")
+
+    # random normarl initialization
+    a = torch.randn(3,3) # N(0,1)
+    b = torch.randn_like(a)
+    c = torch.normal(mean=torch.full([10],0),std=torch.arange(1,0,-0.1))
     print(f"\n{a}\n{b}\n{c}\n")
