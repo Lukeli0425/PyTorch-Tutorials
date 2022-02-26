@@ -85,6 +85,17 @@ conda remove -n env_name --all
 conda update conda
 ```
 
+## 11. Add Source for Conda
+```zsh
+conda config --set show_channel_urls yes
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r 
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2
+```
+
 ## References
 
 [Conda Docs](https://docs.conda.io/en/latest/index.html#)
+[TUNA](https://mirror.tuna.tsinghua.edu.cn/help/anaconda/)
